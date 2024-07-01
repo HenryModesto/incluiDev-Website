@@ -1,0 +1,90 @@
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #392E2E;
+    font-size: 1rem;
+    margin-top: 1em;
+    width: 600px;
+    border-radius: 20px;
+    height: auto;
+    padding: 15px 25px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoImage {
+    width: auto;
+    height: 100px;
+}
+
+.logoContainer p {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.logoContainer h3 {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.identidade-row {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .logoContainer {
+        width: 100%;
+    }
+
+    .logoContainer p {
+        font-size: 0.875rem;
+    }
+
+    .logoContainer h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoContainer {
+        width: 100%;
+    }
+
+    .logoContainer p {
+        font-size: 0.875rem;
+    }
+
+    .logoContainer h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoContainer {
+        width: 100%;
+    }
+
+    .logoContainer p {
+        font-size: 0.75rem;
+    }
+
+    .logoContainer h3 {
+        font-size: 1rem;
+    }
+}

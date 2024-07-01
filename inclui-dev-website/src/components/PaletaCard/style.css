@@ -1,0 +1,40 @@
+.grid-card{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 0 auto;
+    position: relative;  
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+
+.paleta-title {
+    color: #392E2E;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bloquinhoCenter{
+    width: 150%;
+    object-fit: cover;
+    position: absolute;
+    right: -5rem;
+    margin-top: -6rem
+}
+
+@media (max-width: 900px) {
+    .grid-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem 4rem;
+        gap: 20px;
+    }
+
+    .bloquinhoCenter{
+        height: 5%;
+      }
+}

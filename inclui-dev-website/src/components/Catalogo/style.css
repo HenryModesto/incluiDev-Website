@@ -1,0 +1,259 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.main {
+    background-color: #F9F8F8;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-bottom: 6rem;
+    padding: 1rem 5rem;
+}
+
+.grid article {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 30px 50px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.grid article img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.grid p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container-cursos > h1 {
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+.blocos-1 > img {
+    display: none;
+}
+
+.item-ativo {
+    font-weight: bold;
+}
+
+.menu-curso {
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+.menu-curso ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-curso li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.menu-curso li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in;
+}
+
+.menu-curso li:hover::after,
+.menu-curso li.item-ativo::after {
+    cursor: pointer;
+}
+
+.jogos-select {
+    padding: 5px 8px;
+    background-color: #CA1BB4;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.lateral-img {
+    width: 25%;
+    height: max-content;
+    border: 5px solid #F9A3A4;
+    background-color: #eeafb4a4;
+    border-radius: 15px;
+}
+
+.lateral-img img {
+    width: 100%;
+    height: max-content;
+}
+
+.container-card {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-secundario-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+
+.container-principal img, .grid img {
+    width: 80%;
+    transition: 1s;
+}
+
+.container-principal img:hover, .grid img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+@media (max-width: 1200px) {
+    .menu-curso {
+        font-size: 25px;
+    }
+
+    .menu-curso li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-curso {
+        font-size: 20px;
+    }
+
+    .menu-curso li {
+        margin-right: 15px;
+    }
+
+    .container-principal img {
+        width: 90%;
+    }
+
+    .lateral-card {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-cursos h1 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .menu-curso {
+        font-size: 18px;
+    }
+
+    .menu-curso ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu-curso li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-principal img {
+        width: 100%;
+    }
+
+    .lateral-img {
+        width: 50%;
+    }
+
+    .lateral-card {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        position: relative;
+        top: 0;
+        overflow-x: hidden;
+    }
+
+    .container-cursos h1 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .menu-curso ul {
+        font-size: 14px;
+    }
+
+    .menu-curso li {
+        margin-right: 5px;
+    }
+
+    .lateral-img {
+        width: 75%;
+    }
+
+    .container-principal {
+        gap: 50px;
+    }
+
+    .container-principal img {
+        width: 100%;
+    }
+
+    .lateral-card {
+        display: none;
+    }
+}

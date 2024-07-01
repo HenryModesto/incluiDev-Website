@@ -1,0 +1,46 @@
+.switch-language {
+    position: relative;
+}
+
+.selected-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.selected-option img {
+    width: 40px;
+    height: auto;
+}
+
+.custom-select .options {
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+    margin-top: -2px;
+    display: none;
+}
+
+.custom-select:hover .options {
+    display: block;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f5; 
+    padding: 5px; 
+    cursor: pointer;
+}
+
+.option img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.option:hover .option-container {
+    background-color: #e0e0e0; 
+}

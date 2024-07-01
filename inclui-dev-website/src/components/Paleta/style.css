@@ -1,0 +1,28 @@
+.paleta-card {
+    color: #929292;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.paleta-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+
+.paleta-card p {
+    color: #392E2E;
+    font-size: 24px;
+}
+
+.paleta-card .hexadecimal {
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .paleta-card {
+        width: 100%;
+    }
+}

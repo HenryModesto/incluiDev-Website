@@ -1,0 +1,30 @@
+/* src/pages/Dashboard/style.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  .main-dashboard-container-inicial {
+    display: flex;
+    width: 90%;
+    margin-left: 102px;
+    flex-direction: column;
+    flex: 1; 
+    align-items: flex-start;
+  }
+
+  .continuar-assistindo-section {
+    padding: 20px;
+  }
+
+  .card-container-dashboard {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  
